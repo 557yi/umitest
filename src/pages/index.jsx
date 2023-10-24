@@ -3,9 +3,11 @@
 import { Layout, Space } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 
-import  Navigation from './navigation/navigation.jsx'
-import Carousel from './carousel/carousel.jsx';
+import Navigation from './navigation/navigation.jsx'
+import Carousels from './carousel/carousel.jsx';
 import Seckill from './indexModule/seckill.jsx'
+import Hot from './indexModule/hot.jsx'
+
 
 const headerStyle = {
   textAlign: 'center',
@@ -20,7 +22,7 @@ const contentStyle = {
   minHeight: 120,
   lineHeight: '120px',
   color: '#fff',
-  backgroundColor: '#108ee9',
+  backgroundColor: '#ede2e2',
 };
 const siderStyle = {
   textAlign: 'center',
@@ -46,8 +48,9 @@ export default function HomePage() {
         </div>
       </Header>
       <Content style={contentStyle}>
-        <Carousel/>
-        <Seckill/>
+        <Carousels />
+        <Seckill />
+        <Hot />
       </Content>
       <Footer style={footerStyle}>
         Footer

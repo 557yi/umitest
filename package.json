@@ -13,12 +13,14 @@
     "antd": "^5.10.2",
     "axios": "^1.5.1",
     "bootstrap": "^3.4.1",
-    "umi": "^4.0.87"
+    "umi": "^4.0.87",
+    "umi-request": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "@umijs/plugins": "^4.0.87",
     "typescript": "^5.0.3"
-  }
+  },
+  "proxy":"https://v.api.aa1.cn"
 }
