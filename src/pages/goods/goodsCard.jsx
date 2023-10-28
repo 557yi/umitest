@@ -5,6 +5,7 @@ import { Link } from 'umi';
 
 export default function GoodsCard(props) {
   return (
+    <Link to={"/detail"} state={props.info}>
     <div className={styles.ib}>
       {/* <img src={props.imgurl} alt={props.name}>
       </img>
@@ -19,9 +20,9 @@ export default function GoodsCard(props) {
             <div className={styles.pro_img}>
               <div href="#" className={styles.pro_imga}>
                 
-                 <Link to="/list">
+                
                  <img src={props.info.imgurl} alt={props.info.name} className={styles.pro_imgimg}></img>
-            </Link>
+            
               </div>
                {/* <Link to="/">
                 限时折扣
@@ -35,6 +36,7 @@ export default function GoodsCard(props) {
               <div className={styles.pricedel }>
                 <span >{props.info.discountPrice}</span>
                 <del>{props.info.price}</del></div>
+                <span>已售{props.info.sold}</span>
             </div>
             {/* <p class="desc">全高清屏 / 人工智能语音</p> */}
 
@@ -53,5 +55,6 @@ export default function GoodsCard(props) {
 
 
     </div>
+    </Link>
   );
 }

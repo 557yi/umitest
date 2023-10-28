@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.login_box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.login_box h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(225, 37, 27);
+}
+
+.login_box .login_form {
+  position: relative;
+  padding: 30px 30px;
+  width: 320px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+
+  .close_button {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
+
+.login_box .login_form_forgot {
+  float: right;
+  color: red;
+}
+
+.login_box .login_form_button {
+  border: 0;
+  height: 30px;
+  width: 100%;
+  color: #fff;
+  background-color: rgb(225, 37, 27);
+  border-radius: 6px;
+}
+
+.login_box .tip {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(189, 191, 193);
+
+  span {
+    color: rgb(225, 37, 27);
+  }
+}
+
+.hd {
+  height: 50px;
+  font-size: 10px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.67);
+}
+
+.hd ul {
+  margin-top: -10px;
+  padding-left: 490px;
+  color: rgb(0, 0, 0);
+}
+
+.hd .login_btn {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  padding-left: 50px;
+  font-size: 10px;
+  color: #ececec;
+  height: 10px;
+  width: 30px
+  /* width: 10px; */
+}
